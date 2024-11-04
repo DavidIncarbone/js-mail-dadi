@@ -13,11 +13,11 @@ const userNumbers = parseInt(prompt("Inserire i primi numeri da voler elevare al
 console.log(`I numeri totali sono ${totalNumbers}. I primi ${userNumbers} sono da elevare al cubo.`);
 let cubeNumbers = [];
 cubeNumbers = totalNumbers.slice(0, userNumbers);
-console.log(cubeNumbers);
+console.log(`I numeri scelti sono ${cubeNumbers}`);
 
 for (let i = 0; i < cubeNumbers.length; i++) {
 
-    const cubeResults = cubeNumbers[i] * cubeNumbers[i] * cubeNumbers[i];
+    const cubeResults = Math.pow(cubeNumbers[i], 3);
     console.log(cubeResults);
 
 }
